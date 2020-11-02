@@ -1,0 +1,67 @@
+@font-face{
+ src: url(fonts/Retro\ Gaming.ttf);
+ font-family: RetroGaming;
+}
+
+#fixedImageHome{
+    background: url(img/bg3.png) no-repeat center center fixed;
+    display:grid;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    
+}
+
+
+
+body{
+    overflow-x: hidden;
+    font-family: RetroGaming;
+    color: #FFFFFF;
+    background-color: #292929;    
+}
+
+.row{
+    margin: auto;
+}
+
+.select{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;  
+}
+
+.idioma{
+    padding-top: 35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;       
+}
+
+.idioma strong{
+    color:#00A8F2;
+    opacity: 0;
+    text-decoration: none;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #000000;    
+}
+
+.idioma:hover{    
+    text-decoration-color: #00A8F2;
+    color: #00A8F2;
+}
+
+.idioma:hover > strong{
+    text-decoration: none;    
+    color: #00A8F2;
+    opacity: 1;
+}
+
+@media(max-width:360px){
+    .select{
+        font-size: 35px;
+    }
+
+    .idioma{
+        font-size: 30px;
+    }
+}
