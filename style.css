@@ -444,7 +444,7 @@ body{
 }
 
 .card-img{  
-    height: 250px; 
+    height: 275px !important; 
     object-fit: cover;
     width: 100%;
 }
