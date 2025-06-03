@@ -253,41 +253,42 @@ body{
   border-radius:30px;
 }
 
-/*active button*/
-
-.owl-carousel .active span {
-  width:10px;
-  height:10px;
-  margin:5px 7px;
-  background: #00A8F2 !important;
-  display:block;
-  -webkit-backface-visibility:visible;
-  -webkit-transition:opacity 200ms ease;
-  -moz-transition:opacity 200ms ease;
-  -ms-transition:opacity 200ms ease;
-  -o-transition:opacity 200ms ease;
-  transition:opacity 200ms ease;
-  -webkit-border-radius:30px;
-  -moz-border-radius:30px;
-  border-radius:30px;
+/*Experience SECTION*/
+#experience {
+  background-color: #1A1A1A;
+  padding-bottom: 3rem;
 }
 
-.fixed-background{
-  background: url(img/bg1.png) no-repeat center center fixed;
-  z-index: -1;
-  display:table;    
-  width: 100%;
-  position: relative;
-  background-size: cover;
+#experience h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.feature img{
-  margin-bottom: 3rem;
+.job {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
 }
 
-.textSkills{
-  
-  padding: 15px 5% 80px 5%;
+.job h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.job h3 span {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.job .company {
+  font-size: 1rem;
+  color: #00A8F2;
+  margin-bottom: 0.5rem;
+}
+
+.job .description {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 
@@ -319,8 +320,7 @@ body{
 /*Language section*/
 
 #langueges{
-  background-color: #1A1A1A;
-  
+  background-color: #1A1A1A;  
 }
 
 
@@ -334,61 +334,9 @@ body{
 .lang{
   position: relative;
   list-style: none;
-  margin: 50px 0;
+  margin: 25px 0;
   font-weight: 500;
   text-transform: uppercase;
-}
-
-.lang:before{
-  content: "";
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background: #1A1A1A;
-  border-radius: 1000px;
-
-}
-
-.lang:after{
-  content: "";
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  width: 0;
-  height: 10px;
-  background: #00A8F2;
-  border-radius: 1000px;
-  animation-duration: 3s;
-  animation-timing-function:ease;
-  animation-fill-mode: forwards;
-}
-
-.lang.catala:after{
-  animation-name: catala;
-}
-
-@keyframes catala{
-  to{
-    width:100%;
-  }
-}
-.lang.castella:after{
-  animation-name: castella;
-}
-@keyframes castella{
-  to{
-    width:100%;
-  }
-}
-.lang.english:after{
-  animation-name: english;
-}
-@keyframes english{
-  to{
-    width:75%;
-  }
 }
 
 /*Projects section*/
